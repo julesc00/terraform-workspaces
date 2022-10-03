@@ -1,6 +1,7 @@
 terraform workspace new workspace_name
 terraform workspace select workspace_name
 terraform workspace list
+terraform workspace show
 
 # To select a tfvars file upon plan or apply
 terraform plan -var-file dev.tfvars -out=my_plan.tfplan
