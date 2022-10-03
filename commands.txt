@@ -1,0 +1,13 @@
+terraform workspace new workspace_name
+terraform workspace select workspace_name
+terraform workspace list
+
+# To select a tfvars file upon plan or apply
+terraform plan -var-file dev.tfvars -out=my_plan.tfplan
+terraform plan -var-file prod.tfvars -out=my_plan.tfplan
+
+# To apply
+terraform apply my_plan.tfplan
+
+# To destroy
+terraform destroy -var-file dev.tfvars
